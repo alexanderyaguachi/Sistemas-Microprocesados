@@ -1,6 +1,6 @@
-UNIVERSIDAD TECNICA DEL NORTE
-Alexander Yaguachi
-Deber 1 Juego de Luces
+//UNIVERSIDAD TECNICA DEL NORTE
+//Alexander Yaguachi
+//Deber 1 Juego de Luces
 
 
 int t=400;                         //Declaramos el tiempo de prendido
