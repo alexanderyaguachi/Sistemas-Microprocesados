@@ -4,7 +4,7 @@
 
 // Indicamos que pines del arduino estamos utilizando
 int boton = 14;
-int v_binario [5] = {17, 18, 19, 20, 21};
+int v_binario [5] = {17, 18, 19, 20, 21};   //Declaramos un vector de 5 posiciones para contador binario
 int i = 0;
 int j = 0;
 void setup() {
@@ -25,7 +25,7 @@ void loop() {
          }
          else digitalWrite (v_binario [j] , LOW );
 
-         delay (400);
+         delay (400);             //Reliza una pausa durante un tiempo
       }
     }
   }
