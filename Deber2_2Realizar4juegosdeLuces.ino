@@ -10,7 +10,6 @@ int led_5=12;
 int led_6=13;
 int sw_1=7;
 int sw_2=6;
-int pulsador=5;
 int leds [6]={led_1,led_2,led_3,led_4,led_5,led_6}; //Declaramos un vector de 6 posiciones
 int leds1 [3]={led_2,led_4,led_6};                  //Declaramos un vector de 3 posiciones
 int contador=0;
