@@ -11,8 +11,8 @@ int led_6=13;
 int sw_1=7;
 int sw_2=6;
 int pulsador=5;
-int leds [6]={led_1,led_2,led_3,led_4,led_5,led_6};
-int leds1 [3]={led_2,led_4,led_6};
+int leds [6]={led_1,led_2,led_3,led_4,led_5,led_6}; //Declaramos un vector de 6 posiciones
+int leds1 [3]={led_2,led_4,led_6};                  //Declaramos un vector de 3 posiciones
 int contador=0;
 int cont=0;
 int i=0;  
@@ -59,9 +59,9 @@ conta=1;
 if(digitalRead(sw_1)==LOW&&digitalRead(sw_2)==HIGH){
   delay(200);
   for(;i<5;i=i+1){
-  dato=random(5);
+  dato=random(5);                     //Imprime un led aleatorio dentro del vector de 6 posiciones
   digitalWrite(leds1[dato],HIGH);
-  delay(400);
+  delay(400);                         //Reliza una pausa durante un tiempo
   digitalWrite(leds1[dato],LOW);
   delay(400);
   i=0;
@@ -89,12 +89,12 @@ contador=0;
 //4)Si el switch_1 esta en "0" y el swith_2 esa en "0", se enciende aleatoriamente dos leds a la vez (6,1)(5,2)(4,3).
 if (digitalRead(sw_1)==LOW&&digitalRead(sw_2)==LOW){ 
    for(;i<8;i+1){                                          
-   dato2=random(3,8);                                      
+   dato2=random(3,8);                     //Imprime un led aleatorio dentro del vector de 6 posiciones                 
    { 
       if(dato2==3){                                        
       digitalWrite(led_1,HIGH);
       digitalWrite(led_6,HIGH);   
-      delay(400);}                                         
+      delay(400);}                                         //Reliza una pausa durante un tiempo
       if(dato2==3){                                        
       digitalWrite(led_1,LOW);
       digitalWrite(led_6,LOW);   
@@ -106,7 +106,7 @@ if (digitalRead(sw_1)==LOW&&digitalRead(sw_2)==LOW){
       if (dato2==4){                                       
       digitalWrite(led_2,LOW);
       digitalWrite(led_5,LOW);  
-      delay(400);}                                         
+      delay(400);}                                         //Reliza una pausa durante un tiempo
       if(dato2==5){                                        
       digitalWrite(led_3,HIGH);
       digitalWrite(led_4,HIGH);   
@@ -118,6 +118,6 @@ if (digitalRead(sw_1)==LOW&&digitalRead(sw_2)==LOW){
       }
       i=0;
    }
-   delay (1000);                                         
+   delay (1000);                                         //Reliza una pausa durante un tiempo
  }
 }
