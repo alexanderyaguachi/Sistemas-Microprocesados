@@ -1,3 +1,9 @@
+/*
+* UNIVERSIDAD TECNICA DEL NORTE
+*Integrantes: Alexander Yaguachi
+              Edison Picuasi
+*/
+
 #include <Keypad.h>
 #include <Password.h>
 #include <LiquidCrystal.h>
