@@ -57,4 +57,4 @@ void reloj(){
     horas=0;
      }
  graficar(); 
-}
+ }
